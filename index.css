@@ -1,0 +1,146 @@
+:root{
+    /* primary */
+    --red : hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    
+    /* accent */
+    --blue: hsl(248, 32%, 49%);
+
+    /* neutral */
+    --darkblue: hsl(249, 10%, 26%);
+    --grayishblue: hsl(246, 25%, 77%);
+}
+
+*{
+    margin: 0;
+
+}
+
+/* Mobile Size - 375px*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 50px 30px;
+    background-image: url(images/bg-intro-mobile.png);
+    background-color: var(--red);
+    font-size: 16px;
+}
+
+.section-one{
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.promo{
+    background-color: var(--blue) ;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 20px;
+    color: white;
+    box-shadow: 0px 7px 0px hsl(0, 48%, 58%);
+    margin-bottom: 25px;
+
+}
+
+.form{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+input{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--grayishblue);
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+
+input::placeholder{
+    color: var(--darkblue);
+    font-weight: 700;
+    padding: 5px;
+}
+
+
+button{
+    background-color: var(--green);
+    width: 99%;
+    margin: 15px 0px;
+    border-radius: 5px;
+    border: none;
+    border-bottom:5px solid hsl(154, 56%, 44%);
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: white;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: hsl(154, 77%, 58%);
+    border-bottom:5px solid hsl(154, 56%, 50%);
+}
+
+.form h6{
+    text-align: center;
+    font-weight: normal;
+    padding: 0px 15px;
+}
+
+.form h6 a{
+    text-decoration: none;
+    font-weight: bold; 
+    color:hsl(0, 100%, 74%) ;
+}
+
+/* Desktop Size - 1440px*/
+@media screen and (max-width: 1440px) and (min-width: 750px){
+    body{
+        display: flex;
+        background-image: url(images/bg-intro-desktop.png);
+        padding: 80px 150px;
+        
+    }
+
+    .section-one{
+        flex: 45%;
+        margin-right: 130px;
+        text-align: left;
+        padding-top: 170px;
+        line-height: 25px;
+        
+    }
+
+    .section-one h2{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .section-two{
+        flex: 50%;
+    }
+
+
+}
+
+/* Mid Size */
+@media screen and (max-width: 749px) and (min-width: 600px){
+    body{
+        margin: 0px 60px;
+    }
+}
+
+/* Mid Size */
+@media screen  and (min-width: 456px){
+    body{
+        padding: 80px 60px;
+    }
+
+}
